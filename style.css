@@ -1,0 +1,105 @@
+body {
+    background-image: url("fundo_site.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    text-align: center;
+    font-size: 48px;
+}
+header a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+    margin: 0 25px;;
+}
+h1{
+    text-align: center;
+    font-size: 38px;
+    color: rgb(243, 171, 88);
+}
+h2{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.galeria img:hover {
+    transform: scale(1.20);
+}
+.contato {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f4f4f423;
+    border-radius: 10px;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #2563EB;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
